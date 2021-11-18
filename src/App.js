@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Fragment } from "react";
+import MyComponent from "./MyComponent";
 
 function App() {
+  const name = '리액트공부'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="react">
+        {name}<br/>
+          //하하<br/>
+          /*이런주석은 나옴*/
+          {/*리액트 주석*/}
+          <MyComponent name="test"></MyComponent>
+      </div>
+  )
 }
 
 export default App;
